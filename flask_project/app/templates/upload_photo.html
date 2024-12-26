@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<h1>Загрузка фотографии</h1>
+<form method="post" enctype="multipart/form-data">
+    Выберите фотографию для загрузки: <input type="file" name="photo"><br>
+    <button type="submit">Загрузить</button>
+</form>
+{% endblock %}
